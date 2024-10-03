@@ -1,0 +1,18 @@
+.cardEpisodes {
+    background: #fff;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    strong {
+        color: #000;
+        background: #fff;
+        line-height: 1em;
+        font-size: 1.5em;
+        text-align: center !important;
+    }
+    ul, li {
+        background: #fff;
+        color: #000;
+        /* list-style: none; */
+    }
+}

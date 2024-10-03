@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Get Schwifty';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff') format('woff');
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    background: #000416;
+    /* background: #000416 url('https://motionbgs.com/media/776/multiverse-of-rick-and-morty.jpg') no-repeat fixed center center;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -ms-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%; */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    .header {
+        background: none;
+        margin-bottom: 2em;
+    }
+}
+
+h1 {
+    margin-top: .1em;
+    text-align: center;
+    font-weight: 900;
+    font-size: 6em;
+    font-family: 'Get Schwifty';
+    color: rgb(25, 172, 205);
+    text-shadow: 0 0 4px #ffffff;
+    -webkit-text-stroke: 1px #ffffff;
+}
+
+.order {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}

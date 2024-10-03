@@ -1,0 +1,44 @@
+
+.cards {
+    width: 25%;
+    font-family: 'arial';
+    font-size: 18px !important;
+    border: 1px solid #cad;
+    padding: 1em;
+    border-radius: 30px;
+    background: #fff !important;
+    img {
+        width: 100%;
+    }
+    h1 {
+        background: #fff;
+        -webkit-text-stroke: 1px #000;
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .carBody {
+        background: #fff;
+        margin: 1em 0;
+        span {
+            width: 100%;
+            display: block;
+            background:#fff;
+            strong {
+                background: #fff;
+            }
+        }
+    }
+    .btns {
+        display: block;
+        width: 100%;
+        background: #fff;
+        button {
+            width: 100%;
+            background: rgb(25, 172, 205);
+            color: #fff;
+            border: .5px solid #000;
+            padding: .3em 0;
+            margin-top: 1em;
+        }
+    }
+}
