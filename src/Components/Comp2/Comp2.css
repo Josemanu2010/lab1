@@ -1,0 +1,17 @@
+
+.details {
+    width: 100%;
+    background: #fff;
+    margin: 1em auto;
+    display: block;
+    span.img {
+        text-align: center;
+        img {
+            width: 30% !important;
+        }
+    }
+    span, strong {
+        background: #fff;
+        color: black;
+    }
+}

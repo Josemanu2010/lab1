@@ -1,17 +1,24 @@
 import React, { useState } from 'react'
 import './Cards.css'
 import Comp1 from '../Comp1/Comp1';
+import Comp2 from '../Comp2/Comp2';
 
 function Cards({est, esp, nombre, obj}) {
 
     const [episodios, setEpisodios] = useState(null);
-    const [estadoE, setEstadoE] = useState(false)
-    // const estadoEp = () => {
-    //     setEstadoE(!estadoE);
-    // }
+    const [estadoE, setEstadoE] = useState(false);
+    const [detalles, setDetalles] = useState(null);
+    const [showDetalles, setShowDetalles] = useState(false);
+    
     const detalleEpisodios = () => {
         setEpisodios(obj);
         setEstadoE(!estadoE);
+    }
+
+    const detallesObj = () => {
+        setDetalles(obj);
+        // console.log(obj);
+        setShowDetalles(!showDetalles);
     }
 
   return (
@@ -23,11 +30,12 @@ function Cards({est, esp, nombre, obj}) {
             <span><strong>Status:</strong> {est}</span>
             <span><strong>Especie:</strong> {esp}</span>
             {estadoE && <span>{episodios && <Comp1 envepisodios={episodios}/>}</span>}
+            {showDetalles && <span>{detalles && <Comp2 showdetails={detalles}/>}</span>}
             
         </div>
         <div className='btns'>
             <button type='button' onClick={detalleEpisodios}>Ver episodios</button>
-            <button type='button'>Ver detalles</button>
+            <button type='button' onClick={detallesObj}>Ver detalles</button>
         </div>
     </div>
   )
