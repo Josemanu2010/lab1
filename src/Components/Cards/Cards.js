@@ -31,7 +31,6 @@ function Cards({est, esp, nombre, obj}) {
             <span><strong>Especie:</strong> {esp}</span>
             {estadoE && <span>{episodios && <Comp1 envepisodios={episodios}/>}</span>}
             {showDetalles && <span>{detalles && <Comp2 showdetails={detalles}/>}</span>}
-            
         </div>
         <div className='btns'>
             <button type='button' onClick={detalleEpisodios}>Ver episodios</button>

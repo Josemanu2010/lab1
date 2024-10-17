@@ -22,15 +22,6 @@ function App() {
     }, [])
     
 
-
-//   Nombre
-//   Status
-//   Especie
-//   Link Comp2 - a otro componente en donde se muestre todos los episodios que ha participado ese personaje
-//   link Comp3 - Origen, localización e Img
-
-
-
   return (
     <div className="container">
         <div className="header">
